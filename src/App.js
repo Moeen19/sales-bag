@@ -12,10 +12,10 @@ function App() {
     <BrowserRouter>
       <div className="bg-[#F9FBFF]">
         <div className="max-w-[1728px] w-full mx-auto font-Inter">
-          <div className="sm:hidden md:flex">
+          <div className="hidden lg:flex">
             <Sidebar />
           </div>
-          <div className="md:pl-[256px] sm:pl-0 flex flex-col">
+          <div className="lg:pl-[256px] pl-0 flex flex-col">
             <Header />
             <Routes>
               <Route exact path="/" element={<Navigate to="/brands" />} />

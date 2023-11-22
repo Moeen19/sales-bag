@@ -34,8 +34,8 @@ function PinnedItems() {
   });
 
   return (
-    <div className="overflow-x-hidden h-screen max-w-[1472px] sm:pt-[90px] md:pt-[84px] sm:pl-[31px] md:pl-[84px] w-full">
-      <div className="flex gap-[719px] mt-[47px] mb-[50px] sm:hidden md:flex">
+    <div className="overflow-x-hidden h-screen max-w-[1472px] pt-[90px] lg:pt-[84px] px-6 lg:pl-[84px] w-full">
+      <div className="gap-[719px] mt-[47px] mb-[50px] hidden lg:flex">
         <div className="max-w-[292px] w-full">
           <p className="text-[#808191] mb-[8px] text-[24px] font-normal leading-[24px] tracking-[-0.48px]">
             SalesBag
@@ -54,9 +54,9 @@ function PinnedItems() {
         </div>
       </div>
       
-      <h1 className="sm:visible md:hidden my-[32px] text-[20px] leading-[24px] font-semibold tracking-[-0.32px]">Pinned Items</h1>
+      <h1 className="visible lg:hidden my-[32px] text-[20px] leading-[24px] font-semibold tracking-[-0.32px]">Pinned Items</h1>
 
-      <div className="grid sm:grid-cols-2c md:grid-cols-4c gap-[30px]">
+      <div className="grid grid-cols-2c md:grid-cols-2 lg:grid-cols-4c gap-[30px]">
         {renderPinned}
       </div>
     </div>

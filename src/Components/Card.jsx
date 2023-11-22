@@ -24,17 +24,17 @@ function Card({
 
   const [like, setLike] = useState(false);
   const likeHandler = () => {
-    setLike(!like);
-    if(like === false) {
-      handleClickLike();
-    } else {
-      handleClickRemove();
-    }
-    console.log(like)
+    // setLike(!like);
+    // if(like === false) {
+    //   handleClickLike();
+    // } else {
+    //   handleClickRemove();
+    // }
+    // console.log(like)
   };
 
   return (
-    <div className={`${className ? className : "sm:px-[8.9px] sm:pt-[8.89px] sm:max-w-[178px]"} md:max-w-[300px] sm:max-w-[178px] bg-[#FFF] rounded-[12px] md:px-[15px] flex flex-col gap-[20px] md:pt-[15px] md:pb-[25px] w-full`}>
+    <div className={`${className ? className : " px-[8.9px] pt-[8.89px] max-w-[178px]"} lg:max-w-[300px] bg-[#FFF] rounded-[12px] lg:px-[15px] flex flex-col gap-[20px] lg:pt-[15px] lg:pb-[25px] w-full`}>
       <div className="relative">
         <img className="w-full" src={img} />
         <div className="absolute bottom-[18px] right-[12px] flex flex-col gap-[8px] max-w-[34px] w-full">
@@ -149,26 +149,26 @@ function Card({
       </div>
 
       {!cardInfo && (
-        <div className="text-[#000] sm:flex sm:flex-col md:flex-row md:flex gap-[19px] md:items-center md:text-[14px] font-semibold leading-[20px]">
-          <p className="max-w-[179px] sm:text-[12px] md:text-[14px] sm:leading-[16px] md:leading-[20px] w-full">{title}</p>
-          <p className="sm:leading-[11.889px] sm:self-end md:self-auto sm:mb-[12px] md:mb-0 md:leading-[20px]">{price}</p>
+        <div className="text-[#000] flex flex-col lg:flex-row lg:flex gap-[19px] lg:items-center lg:text-[14px] font-semibold leading-[20px]">
+          <p className="max-w-[179px] text-[12px] lg:text-[14px] leading-[16px] lg:leading-[20px] w-full">{title}</p>
+          <p className="leading-[11.889px] self-end lg:self-auto mb-[12px] lg:mb-0 lg:leading-[20px]">{price}</p>
         </div>
       )}
 
       {cardInfo && (
-        <div className={`${classNamePb ? classNamePb : "sm:pb-[12.53px]"} flex md:pb-0 items-center justify-between`}>
-          <div className={`${className2 ? className2 : "sm:gap-[6.4px]"} flex md:gap-[12px] items-center md:max-w-[163px] md:w-full`}>
-            <img className={`${logoClassName ? logoClassName : "sm:max-w-[21.3px] sm:max-h-[21.3px]"} w-full md:max-w-[40px] md:max-h-[40px]`} src={logo} />
+        <div className={`${classNamePb ? classNamePb : "pb-[12.53px]"} flex lg:pb-0 items-center justify-between`}>
+          <div className={`${className2 ? className2 : "gap-[6.4px]"} flex lg:gap-[12px] items-center lg:max-w-[163px] lg:w-full`}>
+            <img className={`${logoClassName ? logoClassName : "max-w-[21.3px] max-h-[21.3px]"} w-full lg:max-w-[40px] lg:max-h-[40px]`} src={logo} />
             <div className="flex flex-col gap-[2px]">
-              <p className={`${titleClassName ? titleClassName : "sm:text-[8px] sm:leading-[10.667px]"} text-[#000] sm:leading-[10.667px] md:text-[14px] font-semibold md:leading-[20px]`}>
+              <p className={`${titleClassName ? titleClassName : "text-[8px] leading-[10.667px]"} text-[#000] leading-[10.667px] lg:text-[14px] font-semibold lg:leading-[20px]`}>
                 {title}
               </p>
-              <p className={`${typeClassName ? typeClassName : "sm:leading-[8.533px] sm:text-[8px]"} text-[#808191] font-normal  md:leading-[16px]  md:text-[12px]`}>
+              <p className={`${typeClassName ? typeClassName : "leading-[8.533px] text-[8px]"} text-[#808191] font-normal  lg:leading-[16px]  lg:text-[12px]`}>
                 {type}
               </p>
             </div>
           </div>
-          <p className={`${priceClassName ? priceClassName : "sm:text-[8px] sm:leading-[10.667px]"} md:text-[14px] font-semibold md:leading-[20px] text-[#000]`}>
+          <p className={`${priceClassName ? priceClassName : "text-[8px] leading-[10.667px]"} lg:text-[14px] font-semibold lg:leading-[20px] text-[#000]`}>
             {price}
           </p>
         </div>

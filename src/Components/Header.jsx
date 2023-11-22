@@ -16,19 +16,19 @@ import List from "../images/List.svg";
 
 function Header() {
   const location = useLocation();
-  const userContext = createContext();
-  console.log(userContext);
-  const [itemsNo, setItemsNo] = useState(0)
-  const items = JSON.parse(localStorage.getItem("my-clothes"));
-  console.log(items.length)
+  // const userContext = createContext();
+  // console.log(userContext);
+  // const [itemsNo, setItemsNo] = useState(0)
+  // const items = JSON.parse(localStorage.getItem("my-clothes"));
+  // console.log(items.length)
 
-  useEffect(() => {
-    setItemsNo(items.length)
-  }, [])
+  // useEffect(() => {
+  //   setItemsNo(items?.length)
+  // }, [])
 
   return (
-    <div className="flex sm:pl-[26px] sm:py-[24px] sm:pr-[35px] md:py-[20px] overflow-hidden max-w-[1472px] z-20 bg-[#F9FBFF] fixed w-full sm:justify-between border-[#E8E8E8] border-b-[1px] items-center md:pl-[84px] md:pr-[70px]">
-      <div className="sm:hidden md:flex max-w-[424px] mr-[115px] w-full relative">
+    <div className="flex pl-[26px] py-[24px] pr-[35px] lg:py-[20px] overflow-hidden max-w-[1472px] z-20 bg-[#F9FBFF] fixed w-full justify-between border-[#E8E8E8] border-b-[1px] items-center lg:pl-[84px] lg:pr-[70px]">
+      <div className="hidden lg:flex max-w-[424px] mr-[115px] w-full relative">
         <img
           className="absolute top-[10px] left-[20px]"
           src={MagnifyingGlass}
@@ -39,13 +39,13 @@ function Header() {
         />
       </div>
 
-      <div className="sm:visible md:hidden items-center flex gap-[8px]">
+      <div className="visible lg:hidden items-center flex gap-[8px]">
         <img className="max-h-[32px]" src={List} />
         <img src={ShoppingBag} />
       </div>
 
       <div
-        className={`flex max-h-[24px] sm:hidden md:flex ${
+        className={`flex max-h-[24px] hidden lg:flex ${
           location.pathname != "/pinnedItems" ? `mr-[291px]` : `mr-[111px]`
         } max-w-[262px] w-full gap-[47px] items-center text-[#808191] text-[14px] font-normal leading-[24px] tracking-[-0.28px]`}
       >
@@ -55,7 +55,7 @@ function Header() {
       </div>
 
       {location.pathname === "/pinnedItems" && (
-        <div className="sm:hidden md:flex mr-[42px]">
+        <div className="hidden lg:flex mr-[42px]">
           <button className="py-[10px] max-h-[39px] px-[30px] bg-[#6151FF] rounded-[5px] flex gap-[10px]">
             <img src={PlusW} />
             <p className="text-[#FFF] text-[16px] font-normal leading-[20px]">
@@ -65,8 +65,8 @@ function Header() {
         </div>
       )}
 
-      <div className="flex relative sm:max-w-[166px] md:max-w-[226px] w-full sm:gap-[15px] md:gap-[56px] items-center">
-        <img className="md:hidden" src={MagnifyingGlass} alt="magImg" />
+      <div className="flex relative max-w-[166px] lg:max-w-[226px] w-full gap-[15px] lg:gap-[56px] items-center">
+        <img className="lg:hidden" src={MagnifyingGlass} alt="magImg" />
 
         <Link to="/pinnedItems">
           {location.pathname != "/pinnedItems" ? (
@@ -101,26 +101,26 @@ function Header() {
         {location.pathname != "/market" &&
           location.pathname != "/pinnedItems" && (
             <img
-              className="absolute md:flex sm:hidden top-[2px] left-[22px]"
+              className="absolute lg:flex hidden top-[2px] left-[22px]"
               src={Ellipse}
             />
           )}
         {location.pathname === "/pinnedItems" && (
           <img
-            className="absolute top-[2px] md:flex sm:hidden left-[32px]"
+            className="absolute top-[2px] lg:flex hidden left-[32px]"
             src={OrangeW}
           />
         )}
         {location.pathname != "/market" &&
           location.pathname != "/pinnedItems" && (
             <img
-              className="absolute top-[2px] left-[100px] md:flex sm:hidden"
+              className="absolute top-[2px] left-[100px] lg:flex hidden"
               src={Ellipse}
             />
           )}
         {location.pathname === "/pinnedItems" && (
           <img
-            className="absolute top-[2px] left-[118px] md:flex sm:hidden"
+            className="absolute top-[2px] left-[118px] lg:flex hidden"
             src={CircleOrange}
           />
         )}
@@ -153,7 +153,7 @@ function Header() {
           </g>
         </svg>
 
-        <div className="flex sm:gap-[4px] md:gap-[12px] max-w-[66px] w-full items-center">
+        <div className="flex gap-[4px] lg:gap-[12px] max-w-[66px] w-full items-center">
           <img className="max-w-[40px] w-full max-h-[40px]" src={People1} />
           <img src={CaretDown} />
         </div>
