@@ -32,7 +32,7 @@ const categoryCards = [
     title: "Sapphire",
     type: "Unstitched",
     price: "PKR 3600",
-    className:"max-w-[369px] px-[18.5px] pt-[18.5px]",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
     titleClassName: "text-[17.36px] leading-[24.6px]",
     typeClassName: "leading-[19.84px] text-[14.88px]",
     priceClassName: "text-[17.36px] leading-[24.8px]",
@@ -47,7 +47,7 @@ const categoryCards = [
     title: "Junaid Jamshed",
     type: "Pret",
     price: "PKR 4999",
-    className:"max-w-[369px] px-[18.5px] pt-[18.5px]",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
     titleClassName: "text-[17.36px] leading-[24.6px]",
     typeClassName: "leading-[19.84px] text-[14.88px]",
     priceClassName: "text-[17.36px] leading-[24.8px]",
@@ -62,7 +62,7 @@ const categoryCards = [
     title: "Gul Ahmed",
     type: "Bridal Collection",
     price: "PKR 12600",
-    className:"max-w-[369px] w-full px-[18.5px] pt-[18.5px]",
+    className: "max-w-[369px] w-full px-[18.5px] pt-[18.5px]",
     titleClassName: "text-[17.36px] leading-[24.6px]",
     typeClassName: "leading-[19.84px] text-[14.88px]",
     priceClassName: "text-[17.36px] leading-[24.8px]",
@@ -77,7 +77,7 @@ const categoryCards = [
     title: "Khaadi",
     type: "Unstitched",
     price: "PKR 6600",
-    className:"max-w-[369px] px-[18.5px] pt-[18.5px]",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
     titleClassName: "text-[17.36px] leading-[24.6px]",
     typeClassName: "leading-[19.84px] text-[14.88px]",
     priceClassName: "text-[17.36px] leading-[24.8px]",
@@ -92,7 +92,7 @@ const categoryCards = [
     title: "Gul Ahmed",
     type: "Bridal Collection",
     price: "PKR 12600",
-    className:"max-w-[369px] px-[18.5px] pt-[18.5px]",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
     titleClassName: "text-[17.36px] leading-[24.6px]",
     typeClassName: "leading-[19.84px] text-[14.88px]",
     priceClassName: "text-[17.36px] leading-[24.8px]",
@@ -107,7 +107,7 @@ const categoryCards = [
     title: "Khaadi",
     type: "Unstitched",
     price: "PKR 6600",
-    className:"max-w-[369px] px-[18.5px] pt-[18.5px]",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
     titleClassName: "text-[17.36px] leading-[24.6px]",
     typeClassName: "leading-[19.84px] text-[14.88px]",
     priceClassName: "text-[17.36px] leading-[24.8px]",
@@ -122,7 +122,7 @@ const categoryCards = [
     title: "Sapphire",
     type: "Unstitched",
     price: "PKR 3600",
-    className:"max-w-[369px] px-[18.5px] pt-[18.5px]",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
     titleClassName: "text-[17.36px] leading-[24.6px]",
     typeClassName: "leading-[19.84px] text-[14.88px]",
     priceClassName: "text-[17.36px] leading-[24.8px]",
@@ -137,7 +137,7 @@ const categoryCards = [
     title: "Junaid Jamshed",
     type: "Pret",
     price: "PKR 4999",
-    className:"max-w-[369px] px-[18.5px] pt-[18.5px]",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
     titleClassName: "text-[17.36px] leading-[24.6px]",
     typeClassName: "leading-[19.84px] text-[14.88px]",
     priceClassName: "text-[17.36px] leading-[24.8px]",
@@ -265,28 +265,33 @@ function Market() {
 
         <div className="max-w-[1430px] ml-[5px] mt-[36px] lg:mt-0 lg:ml-0 w-full ">
           <Swiper
-            className="max-w-[1430px] w-full"
             modules={[Pagination, History]}
-            slidesPerView={2.18}
             pagination={{ clickable: true }}
             breakpoints={{
               400: {
-                width: 358.38,
-                spaceBetween: 35.62,
+                // width: 358.38,
+                // spaceBetween: 35.62,
                 slidesPerView: 1,
               },
               768: {
-                width: 1430,
-                spaceBetween: 30,
+                // width: 1430,
+                // spaceBetween: 30,
+                slidesPerView: 1.8,
+              },
+              1600: {
                 slidesPerView: 2.18,
               },
             }}
           >
             {slide1.map((s, index) => {
               return (
-                <SwiperSlide className="max-w-[608px]" key={index}>
+                <SwiperSlide key={index}>
                   <div className="relative">
-                    <img src={s.img} alt="sImg" />
+                    <img
+                      src={s.img}
+                      alt="sImg"
+                      className="max-w-[370px] lg:max-w-[608px] "
+                    />
                     <div className="absolute hidden lg:flex bg-cbg max-w-[535px] left-[36px] bottom-[-10px] -z-10 w-full rounded-[70px] min-h-[84px] blur-[25px]"></div>
                   </div>
                 </SwiperSlide>
@@ -299,7 +304,7 @@ function Market() {
           <h1 className="text-[#000] mt-[83px] md:text-[26px] lg:mt-[102px] mb-[24px] lg:mb-[50px] text-[16px] lg:text-[24px] tracking-[-0.32px] lg:tracking-[-0.48px] font-semibold leading-[24px]">
             Top Trending Woman
           </h1>
-          <div className="grid grid-cols-4cs lg:grid-cols-4c gap-[16px] lg:gap-[30px]">
+          <div className="grid grid-cols-4cs overflow-x-scroll lg:overflow-x-hidden md:grid-cols-4c gap-[16px] lg:gap-[30px]">
             {trendingWomen.map((c, index) => {
               return (
                 <Card
@@ -318,11 +323,11 @@ function Market() {
           </div>
         </div>
 
-        <div className="mt-[24px] lg:mt-[50px] mb-[24px] lg:mb-[81px]">
+        <div className="mt-[24px] lg:mt-[50px]  mb-[24px] lg:mb-[81px]">
           <h1 className="text-[#000] mb-[24px] md:text-[26px] lg:mb-[50px] lg:text-[24px] text-[16px] tracking-[-0.32px] lg:tracking-[-0.48px] font-semibold leading-[24px]">
             Top Trending Men
           </h1>
-          <div className="grid grid-cols-4cs lg:grid-cols-4c gap-[16px] lg:gap-[30px]">
+          <div className="grid grid-cols-4cs overflow-x-scroll lg:overflow-x-hidden md:grid-cols-4c gap-[16px] lg:gap-[30px]">
             {trendingMen.map((c, index) => {
               return (
                 <Card

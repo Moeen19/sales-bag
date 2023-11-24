@@ -41,11 +41,13 @@ function Header() {
 
       <div className="visible lg:hidden items-center flex gap-[8px]">
         <img className="max-h-[32px]" src={List} />
-        <img src={ShoppingBag} />
+        <Link to="market">
+          <img src={ShoppingBag} />
+        </Link>
       </div>
 
       <div
-        className={`flex max-h-[24px] hidden lg:flex ${
+        className={`xl:flex max-h-[24px] hidden lg:flex ${
           location.pathname != "/pinnedItems" ? `mr-[291px]` : `mr-[111px]`
         } max-w-[262px] w-full gap-[47px] items-center text-[#808191] text-[14px] font-normal leading-[24px] tracking-[-0.28px]`}
       >

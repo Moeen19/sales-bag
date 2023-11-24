@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Alkaram from "../images/Alkaram.svg";
 import GulAhmed from "../images/GulAhmed.svg";
 import Junaid from "../images/J.svg";
@@ -14,7 +14,7 @@ import CaretDown from "../images/CaretDown.svg";
 import Card from "./Card.jsx";
 import Button from "./Button.jsx";
 import suit1w from "../images/Frame.svg";
-import suit2w from "../images/suit-1-w.png";
+import suit2w from "../images/suit-2-w.svg";
 import suit3w from "../images/suit-2-w.png";
 import suit4w from "../images/suit-3-w.png";
 import suit5w from "../images/suit-4-w.png";
@@ -28,6 +28,8 @@ import suit12w from "../images/suit-11-w.png";
 import khaadiSmall from "../images/Rectangle 2 sm.svg";
 
 function Brands() {
+  useEffect(() => {}, []);
+
   const card = [
     {
       img: suit1w,
@@ -154,11 +156,12 @@ function Brands() {
     { img: Almirah },
   ];
 
-  const categoryText = [
-    { text: "Unstitched", value: "unstitched" },
-    { text: "Ideas Pret", value: "Ideas Pret" },
-    { text: "Kaaj", value: "kaaj" },
-  ];
+  const [categoryText, setCategoryText] = useState([
+    { text: "Stitched", value: "stitched", active: true },
+    { text: "Unstitched", value: "unstitched", active: false },
+    { text: "Ideas Pret", value: "Ideas Pret", active: false },
+    { text: "Kaaj", value: "kaaj", active: false },
+  ]);
 
   const info = [
     { Number: "162", text: "Products" },
@@ -199,14 +202,23 @@ function Brands() {
       return filteredClothes;
     }
   };
-  
+
   const handleChangeSort = (val) => {
-    console.log(val)
-    let s = val;
+    let s = val.value ?? val;
+    console.log(val);
     let sorted = sortedClothes(s);
-    console.log(sorted , "sorted----");
-    setSearch(s)
+    setSearch(s);
     filteredClothes = sorted;
+    if (val.value) {
+      const catToggle = categoryText.map((item) => {
+        if (item.value === val.value) {
+          return { ...item, active: true };
+        } else {
+          return { ...item, active: false };
+        }
+      });
+      setCategoryText(catToggle);
+    }
     // setClothes(sorted);
   };
 
@@ -263,32 +275,28 @@ function Brands() {
       <div className="relative pl-[0] lg:pl-[84px]">
         <div className="relative">
           <img className="hidden md:block" src={khaadi} alt="khaadiImg" />
-          <img
-            className="visible md:hidden"
-            src={khaadiSmall}
-            alt="khaadiSm"
-          />
+          <img className="visible md:hidden" src={khaadiSmall} alt="khaadiSm" />
           <div className="max-w-[1235px] lg:flex hidden w-full bottom-0 rounded-[70px] left-[44px] absolute min-h-[84px] blur-[25px] bg-cbg -z-10"></div>
         </div>
 
-        <div className="flex gap-[14px] lg:gap-[41px] absolute top-[95px] md:top-[172px] lg:top-[256px] max-w-[1318px] w-full items-start lg:items-end pt-0 lg:pt-[40px] pl-[29px] lg:pl-[43px]">
+        <div className="flex gap-[14px] lg:gap-[41px] relative top-[-18px] md:top-[-26px] lg:top-[-97px] max-w-[1318px] w-full items-start lg:items-end pt-0 lg:pt-[40px] pl-[29px] lg:pl-[43px]">
           <img
             className="max-w-[100px] lg:max-w-[180px] lg:max-h-[180px] w-full max-h-[100px]"
             src={GulBig}
             alt="GulImg"
           />
-          <div className="flex mt-[31px] lg:mt-0 gap-[199px] items-center">
+          <div className="flex mt-[31px] lg:mt-0 lg:gap-[199px] md:gap-[40px] items-center">
             <div className="max-w-[255px] md:max-w-[400px] lg:max-w-[429px] w-full">
               <h1 className="text-[#000] mb-[12px] lg:mb-[19px] text-[20px] md:text-[24px] lg:text-[32px] font-bold leading-[24px] tracking-[-0.4px] lg:tracking-[-0.64px]">
                 Gul Ahmed
               </h1>
-              <p className="text-[#000] text-[13px]  md:text-[14px] lg:text-[16px] font-normal leading-[16px] tracking-[-0.26px] lg:leading-[24px] lg:tracking-[-0.32px]">
+              <p className="text-[#000] text-[13px] md:max-w-[300px] lg:max-w-[100%]  md:text-[14px] lg:text-[16px] font-normal leading-[16px] tracking-[-0.26px] lg:leading-[24px] lg:tracking-[-0.32px]">
                 Lorem ipsum dolor sit amet consectetur. Consectetur in enim non
                 duis pellentesque eget fermentum phasellus ut.
               </p>
             </div>
 
-            <div className="max-w-[367px] hidden max-h-[58px] w-full lg:flex overflow-hidden gap-[80px]">
+            <div className="max-w-[367px] hidden max-h-[58px] w-full md:flex overflow-hidden md:gap-[30px] lg:gap-[80px]">
               {info.map((item, index) => {
                 return (
                   <div key={index} className="max-w-[80px] w-full">
@@ -306,7 +314,7 @@ function Brands() {
         </div>
       </div>
 
-      <div className="max-w-[367px] md:max-w-[500px] lg:max-w-[367px] md:justify-between lg:justify-normal md:mx-auto lg:mx-0 mt-[134px] ml-[31px] lg:hidden max-h-[58px] w-full flex overflow-hidden gap-[80px]">
+      <div className="max-w-[367px] md:max-w-[500px] lg:max-w-[367px] md:justify-between lg:justify-normal md:mx-auto lg:mx-0 mt-[30px] ml-[31px] md:hidden max-h-[58px] w-full flex overflow-hidden gap-[80px]">
         {info.map((item, index) => {
           return (
             <div key={index} className="max-w-[80px] w-full">
@@ -321,7 +329,7 @@ function Brands() {
         })}
       </div>
 
-      <div className="max-w-[1318px] hidden lg:flex gap-[32px] mt-[186px] items-center ml-[84px] xl:flex pl-[44px] pr-[60px] w-full">
+      <div className="max-w-[1318px] hidden lg:flex gap-[32px] items-center ml-[84px] xl:flex pl-[44px] pr-[60px] w-full">
         <div className="max-w-[810px] w-full relative">
           <img
             className="absolute top-[10px] left-[20px]"
@@ -354,30 +362,41 @@ function Brands() {
         </div>
       </div>
 
-      <div className="flex lg:border-b-[1px] pl-[32px] lg:gap-[21px] md:gap-[112px] gap-[21px] lg:border-[#E8E8E8] max-w-[1318px] mt-[44px] lg:mt-[50px] lg:ml-[84px] w-full">
-        <div onClick={() => {handleChangeSort("stitched")}} className="lg:max-w-[165px] max-w-[116px] lg:mr-[63px] lg:pl-[32px] lg:border-b-[1px] lg:mb-[-1px] lg:pb-[16px] lg:border-[#6151FF] cursor-pointer items-center flex gap-[9px] w-full">
-          <p className="text-[#000] text-[16px]  md:text-[21px] lg:text-[16px] font-semibold leading-[16px] tracking-[-0.32px]">
-            Stitched
-          </p>
-          <p className="text-[#FFF] py-[4px] px-[10px] max-w-[44px] w-full text-center bg-[#7567FF] rounded-[16px] text-[14px] font-normal leading-[14px] tracking-[-0.28px]">
-            128
-          </p>
-        </div>
-        <div className="flex lg:gap-[80px] md:gap-[112px] gap-[21px]">
+      <div className="flex lg:border-b-[1px] md:mx-auto lg:gap-[21px] md:gap-[112px] gap-[21px] lg:border-[#E8E8E8] max-w-[1318px] mt-[44px] lg:mt-[50px] lg:ml-[84px] w-full">
+        <div className="lg:mr-[63px] flex gap-[10px] lg:ml-0 mx-auto lg:max-w-[100%] md:max-w-[500px] max-w-[380px] w-full">
           {categoryText.map((text, index) => {
             return (
-              <p onClick={() => {handleChangeSort(text.value)}}
-                key={index}
-                className="text-[#808191] cursor-pointer text-[16px] md:text-[21px] lg:text-[16px] font-normal leading-[24px] tracking-[-0.32px]"
+              <div
+                className={`${
+                  text.active
+                    ? "lg:pb-[16px] px-[13px] lg:border-b-[1px] justify-between lg:mb-[-1px] lg:border-[#6151FF] max-w-[165px] w-full"
+                    : ""
+                } flex gap-[9px] `}
               >
-                {text.text}
-              </p>
+                <p
+                  onClick={() => {
+                    handleChangeSort(text);
+                  }}
+                  key={index}
+                  className={`${
+                    text.active ? "text-[#000] font-semibold" : "text-[#808191]"
+                  } cursor-pointer text-[16px] md:text-[21px]  lg:text-[16px] font-normal leading-[24px] tracking-[-0.32px]`}
+                >
+                  {text.text}
+                </p>
+                {text.active && (
+                  <p className="text-[#FFF] py-[4px] px-[10px]  max-w-[44px] w-full text-center bg-[#7567FF] rounded-[16px] text-[14px] font-normal leading-[14px] tracking-[-0.28px]">
+                    128
+                  </p>
+                )}
+              </div>
             );
           })}
         </div>
+        <div className="flex lg:gap-[80px] md:gap-[112px] gap-[21px]"></div>
       </div>
 
-      <div className="grid grid-cols-2c md:grid-cols-3 lg:grid-cols-4c ml-[28px] lg:ml-[84px] mb-[43px] lg:mb-0 mt-[44px] lg:mt-[50px] max-w-[1380px] gap-[18px] lg:gap-[30px] w-full">
+      <div className="grid grid-cols-2c md:grid-cols-3 lg:grid-cols-4c ml-[28px] md:ml-0 md:px-4 lg:px-0 lg:ml-[84px] mb-[43px] lg:mb-0 mt-[44px] lg:mt-[50px] max-w-[1380px] gap-[18px] lg:gap-[30px] w-full">
         {filteredClothes.map((c, index) => {
           return (
             <Card

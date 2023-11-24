@@ -21,10 +21,20 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const NewFeed = [
-  { img: Newspaper, title: "News Feed",  },
-  { img: HandbagGray, imgHighlighted: Handbag, title: "Market Place", link: "/market" },
-  { img: CrownSimple, imgHighlighted: CrownSimpleHigh, title: "Brands", link: "/brands" },
-  { img: userCircle, title: "People",  },
+  { img: Newspaper, title: "News Feed" },
+  {
+    img: HandbagGray,
+    imgHighlighted: Handbag,
+    title: "Market Place",
+    link: "/market",
+  },
+  {
+    img: CrownSimple,
+    imgHighlighted: CrownSimpleHigh,
+    title: "Brands",
+    link: "/brands",
+  },
+  { img: userCircle, title: "People" },
 ];
 
 const Online = [
@@ -47,15 +57,17 @@ function Sidebar() {
   return (
     <div className="max-w-[256px] bg-[#F9FBFF] h-[100vh] fixed w-full border-r-[1px] border-[#E8E8E8] overflow-y-auto overflow-x-hidden">
       <div className="max-w-[216px] w-full mx-[20px] mt-[20px]">
-        <div className="flex cursor-pointer max-w-[129px] w-full gap-[10px] ml-[40.92px] mr-[46.08px] items-center">
-          <img src={Shopping} alt="shoppingimg"/>
-          <h1 className="font-Inter text-[20px] text-[#373737] leading-normal font-black">
-            Sale
-            <span className="text-[#949494] font-Inter text-[20px] font-light leading-normal">
-              bag
-            </span>
-          </h1>
-        </div>
+        <Link to="market">
+          <div className="flex cursor-pointer max-w-[129px] w-full gap-[10px] ml-[40.92px] mr-[46.08px] items-center">
+            <img src={Shopping} alt="shoppingimg" />
+            <h1 className="font-Inter text-[20px] text-[#373737] leading-normal font-black">
+              Sale
+              <span className="text-[#949494] font-Inter text-[20px] font-light leading-normal">
+                bag
+              </span>
+            </h1>
+          </div>
+        </Link>
 
         <p className="text-[#808191] text-[11px] font-normal leading-[20px] mt-[25px] mb-[26px]">
           New Feed
@@ -65,10 +77,26 @@ function Sidebar() {
           {NewFeed.map((item, index) => {
             return (
               <Link key={index} to={item.link}>
-                <div className={`pt-[10px] hover:bg-[#6151FF]/10 hover:rounded-[8px] pb-[12px] pl-[20px] pr-[69px] items-center flex gap-[16px] ${location.pathname === item.link && `bg-[#6151FF] hover:bg-[#6151FF]/100 rounded-[8px] flex`}`}>
-                  <img src={location.pathname === item.link ? item.imgHighlighted : item.img} alt="linkImg" />
+                <div
+                  className={`pt-[10px] hover:bg-[#6151FF]/10 hover:rounded-[8px] pb-[12px] pl-[20px] pr-[69px] items-center flex gap-[16px] ${
+                    location.pathname === item.link &&
+                    `bg-[#6151FF] hover:bg-[#6151FF]/100 rounded-[8px] flex`
+                  }`}
+                >
+                  <img
+                    src={
+                      location.pathname === item.link
+                        ? item.imgHighlighted
+                        : item.img
+                    }
+                    alt="linkImg"
+                  />
 
-                  <p className={`text-[#808191] text-[14px] font-normal leading-[20px] ${location.pathname === item.link && `text-white`}`}>
+                  <p
+                    className={`text-[#808191] text-[14px] font-normal leading-[20px] ${
+                      location.pathname === item.link && `text-white`
+                    }`}
+                  >
                     {item.title}
                   </p>
                 </div>
@@ -84,8 +112,11 @@ function Sidebar() {
         <div className="ml-[19px] mr-[18px] flex flex-col gap-[20px]">
           {Online.map((item, index) => {
             return (
-              <div key={index} className="flex cursor-pointer gap-[16px] items-center">
-                <img src={item.img} alt="ItemImg"/>
+              <div
+                key={index}
+                className="flex cursor-pointer gap-[16px] items-center"
+              >
+                <img src={item.img} alt="ItemImg" />
                 <p className="text-[#111827] text-[14px] font-medium leading-[24px]">
                   {item.text}
                 </p>
@@ -102,12 +133,12 @@ function Sidebar() {
           {group.map((item, index) => {
             return (
               <div key={index} className="flex cursor-pointer gap-[16px]">
-                <img src={item.img} alt="itemImage"/>
+                <img src={item.img} alt="itemImage" />
                 <div>
                   <p className="text-[#111827] max-w-[133px] whitespace-nowrap w-full text-[14px] font-medium leading-[20px]">
                     {item.text}
                   </p>
-                  <img src={item.imgSmall} alt="imgSmall"/>
+                  <img src={item.imgSmall} alt="imgSmall" />
                 </div>
               </div>
             );
