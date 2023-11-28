@@ -9,8 +9,8 @@ import { useState } from "react";
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 
 function App() {
-  const itemsLocal = JSON?.parse(localStorage?.getItem("my-clothes"));
-  const [itemsNo, setItemsNo] = useState(itemsLocal.length ?? [])
+  const itemsLocal = JSON?.parse(localStorage?.getItem("my-clothes")) ?? [];
+  const [itemsNo, setItemsNo] = useState(itemsLocal.length ?? 0)
   console.log(itemsNo)
   return (
     <BrowserRouter>
