@@ -277,7 +277,7 @@ function Brands({ setItemsNo }) {
               Brands
             </h1>
           </div>
-          <div className="flex items-end md:justify-between overflow-x-scroll gap-[14px] lg:gap-[51px]">
+          <div className="flex items-end md:justify-between md:overflow-hidden lg:overflow-x-scroll xl:overflow-x-hidden gap-[14px] lg:gap-[51px]">
             {brandIcons.map((icon, index) => {
               return (
                 <img
@@ -421,7 +421,7 @@ function Brands({ setItemsNo }) {
           <div className="flex lg:gap-[80px] md:gap-[112px] gap-[21px]"></div>
         </div>
 
-        <div className="grid grid-cols-2c md:grid-cols-3 lg:grid-cols-4 pl-[28px] md:pl-0 md:px-4 lg:px-0 lg:pl-[84px] mb-[43px] lg:mb-0 mt-[44px] lg:mt-[50px] max-w-[1380px] gap-[18px] lg:gap-[30px] w-full">
+        <div className="grid grid-cols-2c md:grid-cols-3 lg:grid-cols-4 pl-[28px] md:pl-0 md:px-4 lg:pl-[84px] mb-[43px] lg:mb-0 mt-[44px] pr-[20px] lg:mt-[50px] max-w-[1380px] gap-[18px] lg:gap-[30px] w-full">
           {filteredClothes.map((c, index) => {
             return (
               <Card

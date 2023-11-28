@@ -291,6 +291,7 @@ function Market({ setItemsNo }) {
                     // width: 1430,
                     // spaceBetween: 30,
                     slidesPerView: 1.8,
+                    spaceBetween: 30,
                   },
                   1600: {
                     spaceBetween: 30,
@@ -319,7 +320,7 @@ function Market({ setItemsNo }) {
               <h1 className="text-[#000] mt-[83px] md:text-[26px] lg:mt-[102px] mb-[24px] lg:mb-[50px] text-[16px] lg:text-[24px] tracking-[-0.32px] lg:tracking-[-0.48px] font-semibold leading-[24px]">
                 Top Trending Woman
               </h1>
-              <div className="grid grid-cols-4cs overflow-x-scroll lg:overflow-x-hidden md:grid-cols-4c gap-[16px] lg:gap-[30px]">
+              <div className="grid grid-cols-4cs lg:overflow-x-scroll xl:overflow-x-hidden overflow-x-scroll lg:overflow-x-hidden md:grid-cols-4c gap-[16px] lg:gap-[30px]">
                 {trendingWomen.map((c, index) => {
                   return (
                     <Card
@@ -342,7 +343,7 @@ function Market({ setItemsNo }) {
               <h1 className="text-[#000] mb-[24px] md:text-[26px] lg:mb-[50px] lg:text-[24px] text-[16px] tracking-[-0.32px] lg:tracking-[-0.48px] font-semibold leading-[24px]">
                 Top Trending Men
               </h1>
-              <div className="grid grid-cols-4cs overflow-x-scroll lg:overflow-x-hidden md:grid-cols-4c gap-[16px] lg:gap-[30px]">
+              <div className="grid grid-cols-4cs lg:overflow-x-scroll xl:overflow-x-hidden  overflow-x-scroll md:grid-cols-4c gap-[16px] lg:gap-[30px]">
                 {trendingMen.map((c, index) => {
                   return (
                     <Card
