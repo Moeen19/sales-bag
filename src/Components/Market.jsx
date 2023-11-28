@@ -284,7 +284,7 @@ function Market({ setItemsNo }) {
                 breakpoints={{
                   400: {
                     // width: 358.38,
-                    // spaceBetween: 35.62,
+                    spaceBetween: 30,
                     slidesPerView: 1,
                   },
                   768: {
@@ -385,7 +385,7 @@ function Market({ setItemsNo }) {
               </div>
             </div>
 
-            <div className="grid mb-[171.2px] md:grid-cols-2  lg:max-w-[1320px] lg:mb-0 grid-cols-1c lg:grid-cols-4c gap-[30px]">
+            <div className="grid mb-[171.2px] md:grid-cols-2 lg:max-w-[1320px] lg:mb-0 grid-cols-1c lg:grid-cols-4 gap-[30px]">
               {categoryCards.map((c, index) => {
                 return (
                   <Card
