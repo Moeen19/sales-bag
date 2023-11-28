@@ -238,7 +238,7 @@ function Brands({ setItemsNo }) {
         ...JSON.parse(localStorage.getItem("my-clothes")),
         item,
       ];
-      setItemsNo(clothesArr.length)
+      setItemsNo(clothesArr.length);
       localStorage.setItem("my-clothes", JSON.stringify(clothesArr));
     } else {
       localStorage.setItem("my-clothes", JSON.stringify([item]));
@@ -250,7 +250,7 @@ function Brands({ setItemsNo }) {
     let remArr = clothesArr.filter((cloth) => {
       return cloth.id !== item.id;
     });
-    setItemsNo(remArr.length)
+    setItemsNo(remArr.length);
     console.log(remArr);
     localStorage.setItem("my-clothes", JSON.stringify(remArr));
   };
@@ -389,6 +389,7 @@ function Brands({ setItemsNo }) {
             {categoryText.map((text, index) => {
               return (
                 <div
+                  key={index}
                   className={`${
                     text.active
                       ? "lg:pb-[16px] px-[13px] lg:border-b-[1px] justify-between lg:mb-[-1px] lg:border-[#6151FF] max-w-[165px] w-full"
