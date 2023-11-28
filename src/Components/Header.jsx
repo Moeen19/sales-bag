@@ -14,17 +14,10 @@ import CircleOrange from "../images/EllipseO.svg";
 import ShoppingBag from "../images/ShoppingBag.svg";
 import List from "../images/List.svg";
 
-function Header() {
+function Header({ itemsNo }) {
   const location = useLocation();
   // const userContext = createContext();
   // console.log(userContext);
-  // const [itemsNo, setItemsNo] = useState(0)
-  // const items = JSON.parse(localStorage.getItem("my-clothes"));
-  // console.log(items.length)
-
-  // useEffect(() => {
-  //   setItemsNo(items?.length)
-  // }, [])
 
   return (
     <div className="flex pl-[26px] py-[24px] pr-[35px] lg:py-[20px] overflow-hidden max-w-[1472px] z-20 bg-[#F9FBFF] fixed w-full justify-between border-[#E8E8E8] border-b-[1px] items-center lg:pl-[84px] lg:pr-[70px]">
@@ -69,6 +62,7 @@ function Header() {
 
       <div className="flex relative max-w-[166px] lg:max-w-[226px] w-full gap-[15px] lg:gap-[56px] items-center">
         <img className="lg:hidden" src={MagnifyingGlass} alt="magImg" />
+        <p className={`${location.pathname === "/pinnedItems" ? "top-[0.5px] left-[35.5px]" : "top-[-1px] left-[24px]"} absolute font-semibold text-[13px]  z-10`}>{itemsNo}</p>
 
         <Link to="/pinnedItems">
           {location.pathname != "/pinnedItems" ? (
@@ -100,29 +94,27 @@ function Header() {
           )}
         </Link>
 
-        {location.pathname != "/market" &&
-          location.pathname != "/pinnedItems" && (
-            <img
-              className="absolute lg:flex hidden top-[2px] left-[22px]"
-              src={Ellipse}
-            />
-          )}
+        {location.pathname != "/pinnedItems" && (
+          <img
+            className="absolute max-w-[13px] h-[13px] w-full lg:flex hidden top-[2px] left-[22px]"
+            src={Ellipse}
+          />
+        )}
         {location.pathname === "/pinnedItems" && (
           <img
-            className="absolute top-[2px] lg:flex hidden left-[32px]"
+            className="absolute max-w-[16px] h-[16px] w-full top-[2px] lg:flex hidden left-[32px]"
             src={OrangeW}
           />
         )}
-        {location.pathname != "/market" &&
-          location.pathname != "/pinnedItems" && (
-            <img
-              className="absolute top-[2px] left-[100px] lg:flex hidden"
-              src={Ellipse}
-            />
-          )}
+        {location.pathname != "/pinnedItems" && (
+          <img
+            className="absolute top-[2px] max-w-[13px] h-[13px] w-full left-[100px] lg:flex hidden"
+            src={Ellipse}
+          />
+        )}
         {location.pathname === "/pinnedItems" && (
           <img
-            className="absolute top-[2px] left-[118px] lg:flex hidden"
+            className="absolute max-w-[16px] h-[16px] w-full top-[2px] left-[118px] lg:flex hidden"
             src={CircleOrange}
           />
         )}

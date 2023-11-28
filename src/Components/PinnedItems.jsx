@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import CardPinned from "./CardPinned.jsx";
 
-function PinnedItems() {
+function PinnedItems({ setItemsNo }) {
   const [clothes, setClothes] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,8 @@ function PinnedItems() {
     let remArr = clothes.filter((cloth) => {
       return cloth.id !== item.id;
     });
-    setClothes(remArr)
+    setClothes(remArr);
+    setItemsNo(remArr.length);
     localStorage.setItem("my-clothes", JSON.stringify(remArr));
   };
 
@@ -53,8 +54,10 @@ function PinnedItems() {
           </p>
         </div>
       </div>
-      
-      <h1 className="visible lg:hidden my-[32px] text-[20px] leading-[24px] font-semibold tracking-[-0.32px]">Pinned Items</h1>
+
+      <h1 className="visible lg:hidden my-[32px] text-[20px] leading-[24px] font-semibold tracking-[-0.32px]">
+        Pinned Items
+      </h1>
 
       <div className="grid grid-cols-2c md:grid-cols-2 lg:grid-cols-4c gap-[30px]">
         {renderPinned}
