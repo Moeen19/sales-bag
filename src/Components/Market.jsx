@@ -267,7 +267,7 @@ function Market({ setItemsNo }) {
         <span className="loader h-[100%] flex inset-0 m-auto mt-[540px] "></span>
       ) : (
         <div className="px-6 lg:px-0 lg:pl-[84px] w-full">
-          <div className="overflow-x-hidden pt-[84px] max-w-[1472px] w-full">
+          <div className="overflow-x-hidden max-w-[1472px] w-full">
             <div className="max-w-[292px] hidden lg:flex lg:flex-col w-full mt-[47px] mb-[50px]">
               <p className="text-[#808191] mb-[8px] text-[24px] font-normal leading-[24px] tracking-[-0.48px]">
                 SalesBag
@@ -293,6 +293,7 @@ function Market({ setItemsNo }) {
                     slidesPerView: 1.8,
                   },
                   1600: {
+                    spaceBetween: 30,
                     slidesPerView: 2.18,
                   },
                 }}
@@ -304,7 +305,7 @@ function Market({ setItemsNo }) {
                         <img
                           src={s.img}
                           alt="sImg"
-                          className="max-w-[370px] lg:max-w-[608px] "
+                          className=""
                         />
                         <div className="absolute hidden lg:flex bg-cbg max-w-[535px] left-[36px] bottom-[-10px] -z-10 w-full rounded-[70px] min-h-[84px] blur-[25px]"></div>
                       </div>

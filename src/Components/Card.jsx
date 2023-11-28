@@ -42,7 +42,7 @@ function Card({
           {!like && (
             <svg
               onClick={likeHandler}
-              className="cursor-pointer hover:fill-[6151FF]"
+              className="cursor-pointer group"
               width="34"
               height="34"
               viewBox="0 0 34 34"
@@ -50,7 +50,7 @@ function Card({
               xmlns="http://www.w3.org/2000/svg"
             >
               <circle
-                className="hover:fill-[#6151FF]/50"
+                className="group-hover:fill-[#6151FF]/50"
                 cx="17"
                 cy="17"
                 r="17"
@@ -83,7 +83,7 @@ function Card({
             </svg>
           )}
           <svg
-            className="cursor-pointer"
+            className="group cursor-pointer"
             width="34"
             height="34"
             viewBox="0 0 34 34"
@@ -91,7 +91,7 @@ function Card({
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle
-              className="hover:fill-[#6151FF]/50"
+              className="group-hover:fill-[#6151FF]/50"
               cx="17"
               cy="17"
               r="17"
@@ -117,7 +117,7 @@ function Card({
             />
           </svg>
           <svg
-            className="cursor-pointer"
+            className="group cursor-pointer"
             width="34"
             height="34"
             viewBox="0 0 34 34"
@@ -125,7 +125,7 @@ function Card({
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle
-              className="hover:fill-[#6151FF]/50"
+              className="group-hover:fill-[#6151FF]/50"
               cx="17"
               cy="17"
               r="17"

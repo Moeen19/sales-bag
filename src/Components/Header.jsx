@@ -20,8 +20,8 @@ function Header({ itemsNo }) {
   // console.log(userContext);
 
   return (
-    <div className="flex pl-[26px] py-[24px] pr-[35px] lg:py-[20px] overflow-hidden max-w-[1472px] z-20 bg-[#F9FBFF] fixed w-full justify-between border-[#E8E8E8] border-b-[1px] items-center lg:pl-[84px] lg:pr-[70px]">
-      <div className="hidden lg:flex max-w-[424px] mr-[115px] w-full relative">
+    <div className=" flex pl-[26px] py-[24px] pr-[35px] lg:py-[20px] overflow-hidden  z-20 bg-[#F9FBFF] w-full justify-between border-[#E8E8E8] border-b-[1px] items-center lg:pl-[84px] lg:pr-[70px]">
+      <div className="hidden lg:flex max-w-[424px] w-full relative">
         <img
           className="absolute top-[10px] left-[20px]"
           src={MagnifyingGlass}
@@ -41,7 +41,7 @@ function Header({ itemsNo }) {
 
       <div
         className={`xl:flex max-h-[24px] hidden lg:flex ${
-          location.pathname != "/pinnedItems" ? `mr-[291px]` : `mr-[111px]`
+          location.pathname != "/pinnedItems" ? `` : ``
         } max-w-[262px] w-full gap-[47px] items-center text-[#808191] text-[14px] font-normal leading-[24px] tracking-[-0.28px]`}
       >
         <p className="hover:cursor-pointer">About Us</p>
@@ -62,7 +62,7 @@ function Header({ itemsNo }) {
 
       <div className="flex relative max-w-[166px] lg:max-w-[226px] w-full gap-[15px] lg:gap-[56px] items-center">
         <img className="lg:hidden" src={MagnifyingGlass} alt="magImg" />
-        <p className={`${location.pathname === "/pinnedItems" ? "top-[0.5px] left-[35.5px]" : "top-[-1px] left-[24px]"} absolute font-semibold text-[13px]  z-10`}>{itemsNo}</p>
+        <p className={`${location.pathname === "/pinnedItems" ? "top-[1.67px] left-[36.50px]" : "top-[0.5px] left-[25.5px]"} absolute font-semibold text-[#FFF] text-[11px]  z-10`}>{itemsNo}</p>
 
         <Link to="/pinnedItems">
           {location.pathname != "/pinnedItems" ? (

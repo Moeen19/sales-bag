@@ -256,7 +256,7 @@ function Brands({ setItemsNo }) {
   };
 
   return (
-    <div className="overflow-hidden max-w-[1472px] z-10 pt-[84px] w-full min-h-screen h-full">
+    <div className="overflow-hidden max-w-[1472px] z-10 w-full min-h-screen h-full">
       <span
         className={`loader h-[100%] flex inset-0 m-auto mt-[450px] ${
           loader ? "opacity-100" : "opacity-0 hidden"
@@ -277,7 +277,7 @@ function Brands({ setItemsNo }) {
               Brands
             </h1>
           </div>
-          <div className="flex items-end md:justify-between lg:flex-wrap gap-[14px] lg:gap-[51px]">
+          <div className="flex items-end md:justify-between overflow-x-scroll gap-[14px] lg:gap-[51px]">
             {brandIcons.map((icon, index) => {
               return (
                 <img
@@ -308,7 +308,7 @@ function Brands({ setItemsNo }) {
               src={GulBig}
               alt="GulImg"
             />
-            <div className="flex mt-[31px] lg:mt-0 lg:gap-[199px] md:gap-[40px] items-center">
+            <div className="flex mt-[31px] max-w-[996px] pr-[20px] w-full lg:mt-0 justify-between items-center">
               <div className="max-w-[255px] md:max-w-[400px] lg:max-w-[429px] w-full">
                 <h1 className="text-[#000] mb-[12px] lg:mb-[19px] text-[20px] md:text-[24px] lg:text-[32px] font-bold leading-[24px] tracking-[-0.4px] lg:tracking-[-0.64px]">
                   Gul Ahmed
@@ -352,7 +352,7 @@ function Brands({ setItemsNo }) {
           })}
         </div>
 
-        <div className="max-w-[1318px] hidden lg:flex gap-[32px] items-center ml-[84px] xl:flex pl-[44px] pr-[60px] w-full">
+        <div className="max-w-[1318px] hidden lg:flex gap-[32px] items-center pl-[84px] xl:flex pl-[44px] pr-[60px] w-full">
           <div className="max-w-[810px] w-full relative">
             <img
               className="absolute top-[10px] left-[20px]"
@@ -421,7 +421,7 @@ function Brands({ setItemsNo }) {
           <div className="flex lg:gap-[80px] md:gap-[112px] gap-[21px]"></div>
         </div>
 
-        <div className="grid grid-cols-2c md:grid-cols-3 lg:grid-cols-4c ml-[28px] md:ml-0 md:px-4 lg:px-0 lg:ml-[84px] mb-[43px] lg:mb-0 mt-[44px] lg:mt-[50px] max-w-[1380px] gap-[18px] lg:gap-[30px] w-full">
+        <div className="grid grid-cols-2c md:grid-cols-3 lg:grid-cols-4 pl-[28px] md:pl-0 md:px-4 lg:px-0 lg:pl-[84px] mb-[43px] lg:mb-0 mt-[44px] lg:mt-[50px] max-w-[1380px] gap-[18px] lg:gap-[30px] w-full">
           {filteredClothes.map((c, index) => {
             return (
               <Card

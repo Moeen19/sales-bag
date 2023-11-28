@@ -55,7 +55,7 @@ const group = [
 function Sidebar() {
   const location = useLocation();
   return (
-    <div className="max-w-[256px] bg-[#F9FBFF] h-[100vh] fixed w-full border-r-[1px] border-[#E8E8E8] overflow-y-auto overflow-x-hidden">
+    <div className="max-w-[256px] bg-[#F9FBFF] h-[100vh] pb-[50px] fixed w-full border-r-[1px] border-[#E8E8E8] overflow-y-auto overflow-x-hidden">
       <div className="max-w-[216px] w-full mx-[20px] mt-[20px]">
         <Link to="market">
           <div className="flex cursor-pointer max-w-[129px] w-full gap-[10px] ml-[40.92px] mr-[46.08px] items-center">

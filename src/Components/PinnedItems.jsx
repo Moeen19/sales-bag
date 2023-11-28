@@ -35,7 +35,7 @@ function PinnedItems({ setItemsNo }) {
   });
 
   return (
-    <div className="overflow-x-hidden h-screen max-w-[1472px] pt-[90px] lg:pt-[84px] px-6 lg:pl-[84px] w-full">
+    <div className="overflow-x-hidden h-screen max-w-[1472px] px-6 lg:pl-[84px] w-full">
       <div className="gap-[719px] mt-[47px] mb-[50px] hidden lg:flex">
         <div className="max-w-[292px] w-full">
           <p className="text-[#808191] mb-[8px] text-[24px] font-normal leading-[24px] tracking-[-0.48px]">
