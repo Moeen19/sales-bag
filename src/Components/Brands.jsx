@@ -36,7 +36,7 @@ function Brands({ setItemsNo }) {
     }, 1500);
   }, []);
 
-  const card = [
+  const [card, setCard] = useState([
     {
       img: suit1w,
       title: "Needle Craft Embroidered Shirt WGK-KDW",
@@ -149,7 +149,91 @@ function Brands({ setItemsNo }) {
       id: Math.floor(Math.random() * 1000),
       category: "unstitched",
     },
-  ];
+    {
+      img: suit8w,
+      title: "Needle Craft Embroidered Shirt WGK-KDW",
+      price: "PKR 3890",
+      id: Math.floor(Math.random() * 1000),
+      category: "unstitched",
+    },
+    {
+      img: suit9w,
+      title: "Needle Craft Embroidered Shirt WGK-KDW",
+      price: "PKR 3890",
+      id: Math.floor(Math.random() * 1000),
+      category: "Kaaj",
+    },
+    {
+      img: suit10w,
+      title: "The Loom Foil Printed Shirt WGK-YDS-FP",
+      price: "PKR 4990",
+      id: Math.floor(Math.random() * 1000),
+      category: "Ideas Pret",
+    },
+    {
+      img: suit11w,
+      title: "Needle Craft Embroidered Shirt WGK-KDW",
+      price: "PKR 3890",
+      id: Math.floor(Math.random() * 1000),
+      category: "unstitched",
+    },
+    {
+      img: suit12w,
+      title: "Needle Craft Embroidered Shirt WGK-KDW",
+      price: "PKR 3890",
+      id: Math.floor(Math.random() * 1000),
+      category: "stitched",
+    },
+    {
+      img: suit5w,
+      title: "Needle Craft Embroidered Shirt WGK-KDW",
+      price: "PKR 3890",
+      id: Math.floor(Math.random() * 1000),
+      category: "Kaaj",
+    },
+    {
+      img: suit6w,
+      title: "The Loom Foil Printed Shirt WGK-YDS-FP",
+      price: "PKR 4990",
+      id: Math.floor(Math.random() * 1000),
+      category: "unstitched",
+    },
+    {
+      img: suit7w,
+      title: "Needle Craft Embroidered Shirt WGK-KDW",
+      price: "PKR 3890",
+      id: Math.floor(Math.random() * 1000),
+      category: "stitched",
+    },
+    {
+      img: suit8w,
+      title: "Needle Craft Embroidered Shirt WGK-KDW",
+      price: "PKR 3890",
+      id: Math.floor(Math.random() * 1000),
+      category: "unstitched",
+    },
+    {
+      img: suit10w,
+      title: "The Loom Foil Printed Shirt WGK-YDS-FP",
+      price: "PKR 4990",
+      id: Math.floor(Math.random() * 1000),
+      category: "Ideas Pret",
+    },
+    {
+      img: suit11w,
+      title: "Needle Craft Embroidered Shirt WGK-KDW",
+      price: "PKR 3890",
+      id: Math.floor(Math.random() * 1000),
+      category: "unstitched",
+    },
+    {
+      img: suit12w,
+      title: "Needle Craft Embroidered Shirt WGK-KDW",
+      price: "PKR 3890",
+      id: Math.floor(Math.random() * 1000),
+      category: "stitched",
+    },
+  ]);
 
   const brandIcons = [
     { img: GulAhmed },
@@ -185,7 +269,7 @@ function Brands({ setItemsNo }) {
         item.category.toLowerCase().includes(search.toLowerCase())
       );
     });
-  }, [search, clothes]);
+  }, [search, clothes, card]);
 
   const sortedClothes = (sort) => {
     if (sort === "stitched") {
@@ -244,6 +328,15 @@ function Brands({ setItemsNo }) {
       localStorage.setItem("my-clothes", JSON.stringify([item]));
     }
   };
+
+  const [button, setbuttonState] = useState(true)
+  const [endIndex, setEndIndex] = useState(8);
+  const loadmore = () => {
+    setEndIndex(prev => prev+8)
+    if(endIndex > clothes.length) {
+      setbuttonState(false)
+    }
+  }
 
   const handleClickRemove = (item) => {
     const clothesArr = JSON.parse(localStorage.getItem("my-clothes"));
@@ -352,7 +445,7 @@ function Brands({ setItemsNo }) {
           })}
         </div>
 
-        <div className="max-w-[1318px] hidden lg:flex gap-[32px] items-center pl-[84px] xl:flex pl-[44px] pr-[60px] w-full">
+        <div className="max-w-[1318px] hidden lg:flex gap-[32px] items-center xl:flex pl-[44px] pr-[60px] w-full">
           <div className="max-w-[810px] w-full relative">
             <img
               className="absolute top-[10px] left-[20px]"
@@ -421,8 +514,8 @@ function Brands({ setItemsNo }) {
           <div className="flex lg:gap-[80px] md:gap-[112px] gap-[21px]"></div>
         </div>
 
-        <div className="grid grid-cols-2c md:grid-cols-3 lg:grid-cols-4 pl-[28px] md:pl-0 md:px-4 lg:pl-[84px] mb-[43px] lg:mb-0 mt-[44px] pr-[20px] lg:mt-[50px] max-w-[1380px] gap-[18px] lg:gap-[30px] w-full">
-          {filteredClothes.map((c, index) => {
+        <div className={`${button ? "pb-0" : "pb-[80px]"} grid grid-cols-2c md:grid-cols-3 lg:grid-cols-4 pl-[28px] md:pl-0 md:px-4 lg:pl-[84px] mb-[43px] lg:mb-0 mt-[44px] pr-[20px] lg:mt-[50px] max-w-[1380px] gap-[18px] lg:gap-[30px] w-full`}>
+          {filteredClothes.slice(0, endIndex).map((c, index) => {
             return (
               <Card
                 key={index}
@@ -436,9 +529,9 @@ function Brands({ setItemsNo }) {
           })}
         </div>
 
-        <div className="ml-[648px] hidden lg:flex mr-[661px] max-w-[163px] w-full mt-[55px] mb-[107px]">
-          <Button />
-        </div>
+        {button && <div onClick={loadmore} className="mx-auto hidden lg:flex max-w-[163px] w-full mt-[55px] mb-[107px]">
+          <Button onClick={loadmore} />
+        </div>}
       </div>
     </div>
   );

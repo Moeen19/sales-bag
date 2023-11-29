@@ -148,6 +148,246 @@ const categoryCards = [
     classNamePb: "pb-[24px]",
     id: Math.floor(Math.random() * 1000),
   },
+  {
+    img: suit13w,
+    logo: SapphireLogo,
+    title: "Sapphire",
+    type: "Unstitched",
+    price: "PKR 3600",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit14w,
+    logo: JunaidLogo,
+    title: "Junaid Jamshed",
+    type: "Pret",
+    price: "PKR 4999",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit15w,
+    logo: GulLogo,
+    title: "Gul Ahmed",
+    type: "Bridal Collection",
+    price: "PKR 12600",
+    className: "max-w-[369px] w-full px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit16w,
+    logo: KhaadiLogo,
+    title: "Khaadi",
+    type: "Unstitched",
+    price: "PKR 6600",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit15w,
+    logo: GulLogo,
+    title: "Gul Ahmed",
+    type: "Bridal Collection",
+    price: "PKR 12600",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit16w,
+    logo: KhaadiLogo,
+    title: "Khaadi",
+    type: "Unstitched",
+    price: "PKR 6600",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit13w,
+    logo: SapphireLogo,
+    title: "Sapphire",
+    type: "Unstitched",
+    price: "PKR 3600",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit14w,
+    logo: JunaidLogo,
+    title: "Junaid Jamshed",
+    type: "Pret",
+    price: "PKR 4999",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit13w,
+    logo: SapphireLogo,
+    title: "Sapphire",
+    type: "Unstitched",
+    price: "PKR 3600",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit14w,
+    logo: JunaidLogo,
+    title: "Junaid Jamshed",
+    type: "Pret",
+    price: "PKR 4999",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit15w,
+    logo: GulLogo,
+    title: "Gul Ahmed",
+    type: "Bridal Collection",
+    price: "PKR 12600",
+    className: "max-w-[369px] w-full px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit16w,
+    logo: KhaadiLogo,
+    title: "Khaadi",
+    type: "Unstitched",
+    price: "PKR 6600",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit15w,
+    logo: GulLogo,
+    title: "Gul Ahmed",
+    type: "Bridal Collection",
+    price: "PKR 12600",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit16w,
+    logo: KhaadiLogo,
+    title: "Khaadi",
+    type: "Unstitched",
+    price: "PKR 6600",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit13w,
+    logo: SapphireLogo,
+    title: "Sapphire",
+    type: "Unstitched",
+    price: "PKR 3600",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
+  {
+    img: suit14w,
+    logo: JunaidLogo,
+    title: "Junaid Jamshed",
+    type: "Pret",
+    price: "PKR 4999",
+    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[14.88px]",
+    priceClassName: "text-[17.36px] leading-[24.8px]",
+    logoClassName: "max-w-[49.6px] max-h-[49.6px]",
+    className2: "gap-[14.76px] max-w-[202px] w-full",
+    classNamePb: "pb-[24px]",
+    id: Math.floor(Math.random() * 1000),
+  },
 ];
 
 const trendingWomen = [
@@ -239,6 +479,15 @@ function Market({ setItemsNo }) {
     }, 1500);
   }, []);
 
+  const [button, setbuttonState] = useState(true)
+  const [endIndex, setEndIndex] = useState(8);
+  const loadmore = () => {
+    setEndIndex(prev => prev+8)
+    if(endIndex > categoryCards.length) {
+      setbuttonState(false)
+    }
+  }
+
   const handleClickLike = (item) => {
     if (localStorage.getItem("my-clothes")) {
       const clothesArr = [
@@ -320,7 +569,7 @@ function Market({ setItemsNo }) {
               <h1 className="text-[#000] mt-[83px] md:text-[26px] lg:mt-[102px] mb-[24px] lg:mb-[50px] text-[16px] lg:text-[24px] tracking-[-0.32px] lg:tracking-[-0.48px] font-semibold leading-[24px]">
                 Top Trending Woman
               </h1>
-              <div className="grid grid-cols-4cs lg:overflow-x-scroll xl:overflow-x-hidden overflow-x-scroll lg:overflow-x-hidden md:grid-cols-4c gap-[16px] lg:gap-[30px]">
+              <div className="grid grid-cols-4cs lg:overflow-x-scroll xl:overflow-x-hidden overflow-x-scroll md:grid-cols-4c gap-[16px] lg:gap-[30px]">
                 {trendingWomen.map((c, index) => {
                   return (
                     <Card
@@ -385,8 +634,8 @@ function Market({ setItemsNo }) {
               </div>
             </div>
 
-            <div className="grid mb-[171.2px] md:grid-cols-2 lg:max-w-[1320px] lg:mb-0 grid-cols-1c lg:grid-cols-4 gap-[30px]">
-              {categoryCards.map((c, index) => {
+            <div className={`${button ? "pb-0" : "pb-[80px]"} grid mb-[171.2px] md:grid-cols-2 lg:max-w-[1320px] lg:mb-0 grid-cols-1c lg:grid-cols-4 gap-[30px]`}>
+              {categoryCards.slice(0, endIndex).map((c, index) => {
                 return (
                   <Card
                     key={index}
@@ -410,9 +659,9 @@ function Market({ setItemsNo }) {
               })}
             </div>
 
-            <div className="ml-[564px] hidden lg:flex mr-[563px] max-w-[163px] w-full mt-[55px] mb-[107px]">
+            {button && <div onClick={loadmore} className="hidden lg:flex mx-auto max-w-[163px] w-full mt-[55px] mb-[107px]">
               <Button />
-            </div>
+            </div>}
           </div>
         </div>
       )}
