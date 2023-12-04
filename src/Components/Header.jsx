@@ -44,9 +44,9 @@ function Header({ itemsNo }) {
           location.pathname != "/pinnedItems" ? `` : ``
         } max-w-[262px] w-full gap-[47px] items-center text-[#808191] text-[14px] font-normal leading-[24px] tracking-[-0.28px]`}
       >
-        <p className="hover:cursor-pointer">About Us</p>
-        <p className="hover:cursor-pointer">Blogs</p>
-        <p className="hover:cursor-pointer">Contact Us</p>
+        <p className="hover:cursor-pointer hover:underline hover:underline-offset-4 whitespace-nowrap">About Us</p>
+        <p className="hover:cursor-pointer hover:underline hover:underline-offset-4">Blogs</p>
+        <p className="hover:cursor-pointer hover:underline hover:underline-offset-4 whitespace-nowrap">Contact Us</p>
       </div>
 
       {location.pathname === "/pinnedItems" && (
@@ -147,7 +147,7 @@ function Header({ itemsNo }) {
           </g>
         </svg>
 
-        <div className="flex gap-[4px] lg:gap-[12px] max-w-[66px] w-full items-center">
+        <div className="flex gap-[4px] hover:cursor-pointer lg:gap-[12px] max-w-[66px] w-full items-center">
           <img className="max-w-[40px] w-full max-h-[40px]" src={People1} />
           <img src={CaretDown} />
         </div>

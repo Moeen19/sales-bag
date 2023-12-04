@@ -5,15 +5,15 @@ import Handbag from "../images/Handbag.svg";
 import HandbagGray from "../images/HandbagGray.svg";
 import CrownSimpleHigh from "../images/CrownSimpleHigh.svg";
 import Newspaper from "../images/Newspaper.svg";
-import People1 from "../images/People1.svg";
-import People2 from "../images/People2.svg";
-import People3 from "../images/People3.svg";
-import People4 from "../images/People4.svg";
-import People5 from "../images/People5.svg";
-import People6 from "../images/People6.svg";
-import Group1 from "../images/group-1.svg";
-import Group2 from "../images/group-2.svg";
-import Group3 from "../images/group-3.svg";
+import People1 from "../images/Avatar.png";
+import People2 from "../images/People2.png";
+import People3 from "../images/People3.png";
+import People4 from "../images/People4.png";
+import People5 from "../images/People5.png";
+import People6 from "../images/People6.png";
+import Group1 from "../images/group-1.png";
+import Group2 from "../images/group-2.png";
+import Group3 from "../images/group-3.png";
 import SmallG from "../images/Group 1.svg";
 import SmallG2 from "../images/Group 2.svg";
 import SmallG3 from "../images/Group 3.svg";
@@ -56,7 +56,7 @@ function Sidebar() {
   const location = useLocation();
   return (
     <div className="max-w-[256px] bg-[#F9FBFF] h-[100vh] pb-[50px] fixed w-full border-r-[1px] border-[#E8E8E8] overflow-y-auto overflow-x-hidden">
-      <div className="max-w-[216px] w-full mx-[20px] mt-[20px]">
+      <div className="max-w-[216px] w-full mx-auto mt-[20px]">
         <Link to="market">
           <div className="flex cursor-pointer max-w-[129px] w-full gap-[10px] ml-[40.92px] mr-[46.08px] items-center">
             <img src={Shopping} alt="shoppingimg" />
@@ -114,7 +114,7 @@ function Sidebar() {
             return (
               <div
                 key={index}
-                className="flex cursor-pointer gap-[16px] items-center"
+                className="flex hover:bg-[#6151FF]/10 rounded-[8px] cursor-pointer gap-[16px] items-center"
               >
                 <img src={item.img} alt="ItemImg" />
                 <p className="text-[#111827] text-[14px] font-medium leading-[24px]">
@@ -129,10 +129,10 @@ function Sidebar() {
           Group Chat
         </p>
 
-        <div className="flex flex-col max-w-[179px] w-full gap-[20px] ml-[19px] mr-[18px]">
+        <div className="flex flex-col pr-[20px] w-full gap-[20px] ml-[19px] mr-[18px]">
           {group.map((item, index) => {
             return (
-              <div key={index} className="flex cursor-pointer gap-[16px]">
+              <div key={index} className="flex hover:bg-[#6151FF]/10 hover:rounded-[8px] cursor-pointer gap-[16px]">
                 <img src={item.img} alt="itemImage" />
                 <div>
                   <p className="text-[#111827] max-w-[133px] whitespace-nowrap w-full text-[14px] font-medium leading-[20px]">

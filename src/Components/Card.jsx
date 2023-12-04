@@ -26,16 +26,16 @@ function Card({
   const likeHandler = () => {
     setLike(!like);
     if(like === false) {
-      console.log('card')
+      // console.log('card')
       handleClickLike();
     } else {
       handleClickRemove();
     }
-    console.log(like)
+    // console.log(like)
   };
 
   return (
-    <div className={`${className ? className : " px-[8.9px] pt-[8.89px] max-w-[178px]"} md:max-w-[300px] bg-[#FFF] rounded-[12px] md:px-[15px] flex flex-col gap-[20px] md:pt-[15px] md:pb-[25px] w-full`}>
+    <div className={`${className ? className : " px-[8.9px] pt-[8.89px] "} md:max-w-[300px] bg-[#FFF] rounded-[12px] md:px-[15px] flex flex-col gap-[20px] md:pt-[15px] md:pb-[25px] w-full`}>
       <div className="relative">
         <img className="w-full" src={img} />
         <div className="absolute bottom-[18px] right-[12px] flex flex-col gap-[8px] max-w-[34px] w-full">
@@ -61,6 +61,7 @@ function Card({
                 stroke="black"
                 strokeWidth="1.5"
                 strokeLinecap="round"
+                className="group-hover:fill-white group-hover:stroke-none"
                 strokeLinejoin="round"
               />
             </svg>
@@ -102,18 +103,21 @@ function Card({
               stroke="black"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="group-hover:stroke-white"
             />
             <path
               d="M21 22.5H11.5C11.3674 22.5 11.2402 22.4473 11.1464 22.3536C11.0527 22.2598 11 22.1326 11 22V14.5"
               stroke="black"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="group-hover:stroke-white"
             />
             <path
               d="M13.689 20C14.022 18.712 14.7734 17.5712 15.8252 16.7566C16.877 15.9421 18.1696 15.5001 19.4999 15.5H22.9999"
               stroke="black"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="group-hover:stroke-white"
             />
           </svg>
           <svg
@@ -137,6 +141,7 @@ function Card({
               strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="group-hover:stroke-white"
             />
             <path
               d="M17 11.5V22.5"
@@ -144,6 +149,7 @@ function Card({
               strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="group-hover:stroke-white"
             />
           </svg>
         </div>

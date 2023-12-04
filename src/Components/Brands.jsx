@@ -30,6 +30,7 @@ import khaadiSmall from "../images/Rectangle 2 sm.svg";
 
 function Brands({ setItemsNo }) {
   const [loader, setloader] = useState(true);
+  const [loadMore, setloadMore] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setloader(false);
@@ -329,14 +330,20 @@ function Brands({ setItemsNo }) {
     }
   };
 
-  const [button, setbuttonState] = useState(true)
+  const [button, setbuttonState] = useState(true);
   const [endIndex, setEndIndex] = useState(8);
   const loadmore = () => {
-    setEndIndex(prev => prev+8)
-    if(endIndex > clothes.length) {
-      setbuttonState(false)
-    }
-  }
+    setloadMore(true);
+    setTimeout(() => {
+      setEndIndex((prev) => prev + 8);
+      if (endIndex > clothes.length) {
+        setbuttonState(false);
+      }
+    }, 1000);
+    setTimeout(() => {
+      setloadMore(false);
+    }, 1000);
+  };
 
   const handleClickRemove = (item) => {
     const clothesArr = JSON.parse(localStorage.getItem("my-clothes"));
@@ -361,7 +368,7 @@ function Brands({ setItemsNo }) {
           loader ? "opacity-0" : "opacity-100"
         } transition-all duration-700 ease-in-out`}
       >
-        <div className="flex justify-between my-[24px] pl-[26px] lg:pl-[84px] w-full lg:mb-[50px] lg:mt-[47px] pr-0 lg:pr-[127px]">
+        <div className="flex justify-between my-[24px] pl-[5px] sm:pl-[26px] lg:pl-[84px] w-full lg:mb-[50px] lg:mt-[47px] pr-0 lg:pr-[70px] xl:pr-[127px]">
           <div className="max-w-[159px] hidden lg:flex lg:flex-col w-full">
             <p className="text-[#808191] mb-[8px] text-[24px] font-normal leading-[24px] tracking-[-0.48px]">
               SalesBag
@@ -370,12 +377,12 @@ function Brands({ setItemsNo }) {
               Brands
             </h1>
           </div>
-          <div className="flex items-end md:justify-between md:overflow-hidden lg:overflow-x-scroll xl:overflow-x-hidden gap-[14px] lg:gap-[51px]">
+          <div className="flex mx-auto items-end md:justify-between gap-[14px] lg:gap-[51px]">
             {brandIcons.map((icon, index) => {
               return (
                 <img
                   key={index}
-                  className="md:max-w-[80px] cursor-pointer max-w-[44px] max-h-[44px] md:max-h-[80px]"
+                  className="xl:max-w-[80px] md:max-w-[68px] md:max-h-[68px] cursor-pointer max-w-[44px] max-h-[44px] xl:max-h-[80px]"
                   src={icon.img}
                   alt="iconImg"
                 />
@@ -388,7 +395,7 @@ function Brands({ setItemsNo }) {
           <div className="relative">
             <img className="hidden md:block" src={khaadi} alt="khaadiImg" />
             <img
-              className="visible md:hidden"
+              className="visible w-full md:hidden"
               src={khaadiSmall}
               alt="khaadiSm"
             />
@@ -402,11 +409,11 @@ function Brands({ setItemsNo }) {
               alt="GulImg"
             />
             <div className="flex mt-[31px] max-w-[996px] pr-[20px] w-full lg:mt-0 justify-between items-center">
-              <div className="max-w-[255px] md:max-w-[400px] lg:max-w-[429px] w-full">
+              <div className="md:max-w-[400px] lg:max-w-[429px] w-full">
                 <h1 className="text-[#000] mb-[12px] lg:mb-[19px] text-[20px] md:text-[24px] lg:text-[32px] font-bold leading-[24px] tracking-[-0.4px] lg:tracking-[-0.64px]">
                   Gul Ahmed
                 </h1>
-                <p className="text-[#000] text-[13px] md:max-w-[300px] lg:max-w-[100%]  md:text-[14px] lg:text-[16px] font-normal leading-[16px] tracking-[-0.26px] lg:leading-[24px] lg:tracking-[-0.32px]">
+                <p className="text-[#000] text-[13px]  md:text-[14px] lg:text-[16px] font-normal leading-[16px] tracking-[-0.26px] lg:leading-[24px] lg:tracking-[-0.32px]">
                   Lorem ipsum dolor sit amet consectetur. Consectetur in enim
                   non duis pellentesque eget fermentum phasellus ut.
                 </p>
@@ -430,7 +437,7 @@ function Brands({ setItemsNo }) {
           </div>
         </div>
 
-        <div className="max-w-[367px] md:max-w-[500px] lg:max-w-[367px] md:justify-between lg:justify-normal md:mx-auto lg:mx-0 mt-[30px] ml-[31px] md:hidden max-h-[58px] w-full flex overflow-hidden gap-[80px]">
+        <div className="max-w-[367px] pl-[15px] md:max-w-[500px] lg:max-w-[367px] md:justify-between lg:justify-normal md:mx-auto lg:mx-0 mt-[30px] mx-auto md:hidden max-h-[58px] w-full flex justify-between">
           {info.map((item, index) => {
             return (
               <div key={index} className="max-w-[80px] w-full">
@@ -463,11 +470,21 @@ function Brands({ setItemsNo }) {
               onChange={(e) => handleChangeSort(e.target.value)}
               className="max-w-[372px] text-[#595959] text-[12px] leading-[20px] font-normal appearance-none px-[20px] w-full min-h-[40px] outline-none cursor-pointer rounded-[12px]"
             >
-              <option value="categories">Categories</option>
-              <option value="stitched">stitched</option>
-              <option value="unstitched">unstitched</option>
-              <option value="Ideas Pret">Ideas Pret</option>
-              <option value="Kaaj">Kaaj</option>
+              <option className="text-[30px]" value="categories">
+                Categories
+              </option>
+              <option className="text-[30px]" value="stitched">
+                stitched
+              </option>
+              <option className="text-[30px]" value="unstitched">
+                unstitched
+              </option>
+              <option className="text-[30px]" value="Ideas Pret">
+                Ideas Pret
+              </option>
+              <option className="text-[30px]" value="Kaaj">
+                Kaaj
+              </option>
             </select>
 
             <img
@@ -487,7 +504,7 @@ function Brands({ setItemsNo }) {
                     text.active
                       ? "lg:pb-[16px] px-[13px] lg:border-b-[1px] justify-between lg:mb-[-1px] lg:border-[#6151FF] max-w-[165px] w-full"
                       : ""
-                  } flex gap-[9px] `}
+                  } flex gap-[9px]  whitespace-nowrap`}
                 >
                   <p
                     onClick={() => {
@@ -498,12 +515,12 @@ function Brands({ setItemsNo }) {
                       text.active
                         ? "text-[#000] font-semibold"
                         : "text-[#808191]"
-                    } cursor-pointer text-[16px] md:text-[21px]  lg:text-[16px] font-normal leading-[24px] tracking-[-0.32px]`}
+                    } cursor-pointer text-[13px] sm:text-[16px] md:text-[21px]  lg:text-[16px] font-normal leading-[24px] tracking-[-0.32px]`}
                   >
                     {text.text}
                   </p>
                   {text.active && (
-                    <p className="text-[#FFF] py-[4px] px-[10px]  max-w-[44px] w-full text-center bg-[#7567FF] rounded-[16px] text-[14px] font-normal leading-[14px] tracking-[-0.28px]">
+                    <p className="text-[#FFF] h-fit py-[4px] px-[10px]  max-w-[44px] w-full text-center bg-[#7567FF] rounded-[16px] text-[14px] font-normal leading-[14px] tracking-[-0.28px]">
                       128
                     </p>
                   )}
@@ -514,24 +531,41 @@ function Brands({ setItemsNo }) {
           <div className="flex lg:gap-[80px] md:gap-[112px] gap-[21px]"></div>
         </div>
 
-        <div className={`${button ? "pb-0" : "pb-[80px]"} grid grid-cols-2c md:grid-cols-3 lg:grid-cols-4 pl-[28px] md:pl-0 md:px-4 lg:pl-[84px] mb-[43px] lg:mb-0 mt-[44px] pr-[20px] lg:mt-[50px] max-w-[1380px] gap-[18px] lg:gap-[30px] w-full`}>
-          {filteredClothes.slice(0, endIndex).map((c, index) => {
-            return (
-              <Card
-                key={index}
-                handleClickRemove={() => handleClickRemove(c)}
-                handleClickLike={() => handleClickLike(c)}
-                img={c.img}
-                title={c.title}
-                price={c.price}
-              />
-            );
-          })}
+        <div className="max-w-full ">
+          <div
+            className={`${
+              button ? "pb-0" : "pb-[80px]"
+            } grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pl-[28px] md:pl-0 md:px-4 lg:pl-[84px] mb-[43px] lg:mb-0 mt-[44px] pr-[20px] lg:mt-[50px] max-w-[1380px] gap-[18px] lg:gap-[30px] w-full`}
+          >
+            {filteredClothes.slice(0, endIndex).map((c, index) => {
+              return (
+                <Card
+                  key={index}
+                  handleClickRemove={() => handleClickRemove(c)}
+                  handleClickLike={() => handleClickLike(c)}
+                  img={c.img}
+                  title={c.title}
+                  price={c.price}
+                />
+              );
+            })}
+          </div>
+
+          <span
+            className={`loader h-[100%] mt-[70px] max-w-full flex inset-0 mx-auto ${
+              loadMore ? "opacity-100" : "opacity-0 hidden"
+            } transition-all duration-500 ease-in-out`}
+          ></span>
         </div>
 
-        {button && <div onClick={loadmore} className="mx-auto hidden lg:flex max-w-[163px] w-full mt-[55px] mb-[107px]">
-          <Button onClick={loadmore} />
-        </div>}
+        {button && (
+          <div
+            onClick={loadmore}
+            className="mx-auto hidden lg:flex max-w-[163px] w-full mt-[55px] mb-[107px]"
+          >
+            <Button onClick={loadmore} />
+          </div>
+        )}
       </div>
     </div>
   );

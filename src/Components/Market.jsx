@@ -34,10 +34,10 @@ const categoryCards = [
     title: "Sapphire",
     type: "Unstitched",
     price: "PKR 3600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -49,10 +49,10 @@ const categoryCards = [
     title: "Junaid Jamshed",
     type: "Pret",
     price: "PKR 4999",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -64,10 +64,10 @@ const categoryCards = [
     title: "Gul Ahmed",
     type: "Bridal Collection",
     price: "PKR 12600",
-    className: "max-w-[369px] w-full px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] w-full px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -79,10 +79,10 @@ const categoryCards = [
     title: "Khaadi",
     type: "Unstitched",
     price: "PKR 6600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -94,10 +94,10 @@ const categoryCards = [
     title: "Gul Ahmed",
     type: "Bridal Collection",
     price: "PKR 12600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -109,10 +109,10 @@ const categoryCards = [
     title: "Khaadi",
     type: "Unstitched",
     price: "PKR 6600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -124,10 +124,10 @@ const categoryCards = [
     title: "Sapphire",
     type: "Unstitched",
     price: "PKR 3600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -139,10 +139,10 @@ const categoryCards = [
     title: "Junaid Jamshed",
     type: "Pret",
     price: "PKR 4999",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -154,10 +154,10 @@ const categoryCards = [
     title: "Sapphire",
     type: "Unstitched",
     price: "PKR 3600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -169,10 +169,10 @@ const categoryCards = [
     title: "Junaid Jamshed",
     type: "Pret",
     price: "PKR 4999",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -184,10 +184,10 @@ const categoryCards = [
     title: "Gul Ahmed",
     type: "Bridal Collection",
     price: "PKR 12600",
-    className: "max-w-[369px] w-full px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] w-full px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -199,10 +199,10 @@ const categoryCards = [
     title: "Khaadi",
     type: "Unstitched",
     price: "PKR 6600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -214,10 +214,10 @@ const categoryCards = [
     title: "Gul Ahmed",
     type: "Bridal Collection",
     price: "PKR 12600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -229,10 +229,10 @@ const categoryCards = [
     title: "Khaadi",
     type: "Unstitched",
     price: "PKR 6600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -244,10 +244,10 @@ const categoryCards = [
     title: "Sapphire",
     type: "Unstitched",
     price: "PKR 3600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -259,10 +259,10 @@ const categoryCards = [
     title: "Junaid Jamshed",
     type: "Pret",
     price: "PKR 4999",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -274,10 +274,10 @@ const categoryCards = [
     title: "Sapphire",
     type: "Unstitched",
     price: "PKR 3600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -289,10 +289,10 @@ const categoryCards = [
     title: "Junaid Jamshed",
     type: "Pret",
     price: "PKR 4999",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -304,10 +304,10 @@ const categoryCards = [
     title: "Gul Ahmed",
     type: "Bridal Collection",
     price: "PKR 12600",
-    className: "max-w-[369px] w-full px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] w-full px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -319,10 +319,10 @@ const categoryCards = [
     title: "Khaadi",
     type: "Unstitched",
     price: "PKR 6600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -334,10 +334,10 @@ const categoryCards = [
     title: "Gul Ahmed",
     type: "Bridal Collection",
     price: "PKR 12600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -349,10 +349,10 @@ const categoryCards = [
     title: "Khaadi",
     type: "Unstitched",
     price: "PKR 6600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -364,10 +364,10 @@ const categoryCards = [
     title: "Sapphire",
     type: "Unstitched",
     price: "PKR 3600",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -379,10 +379,10 @@ const categoryCards = [
     title: "Junaid Jamshed",
     type: "Pret",
     price: "PKR 4999",
-    className: "max-w-[369px] px-[18.5px] pt-[18.5px]",
-    titleClassName: "text-[17.36px] leading-[24.6px]",
-    typeClassName: "leading-[19.84px] text-[14.88px]",
-    priceClassName: "text-[17.36px] leading-[24.8px]",
+    className: "max-w-[270px] sm:max-w-[369px] px-[18.5px] pt-[18.5px]",
+    titleClassName: "text-[12px] sm:text-[17.36px] leading-[24.6px]",
+    typeClassName: "leading-[19.84px] text-[12px] sm:text-[14.88px]",
+    priceClassName: "text-[12px] sm:text-[17.36px] whitespace-nowrap leading-[24.8px]",
     logoClassName: "max-w-[49.6px] max-h-[49.6px]",
     className2: "gap-[14.76px] max-w-[202px] w-full",
     classNamePb: "pb-[24px]",
@@ -472,6 +472,7 @@ const slide1 = [
 ];
 
 function Market({ setItemsNo }) {
+  const [loadMore, setloadMore] = useState(false);
   const [loader, setloader] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -479,14 +480,20 @@ function Market({ setItemsNo }) {
     }, 1500);
   }, []);
 
-  const [button, setbuttonState] = useState(true)
+  const [button, setbuttonState] = useState(true);
   const [endIndex, setEndIndex] = useState(8);
   const loadmore = () => {
-    setEndIndex(prev => prev+8)
-    if(endIndex > categoryCards.length) {
-      setbuttonState(false)
-    }
-  }
+    setloadMore(true);
+    setTimeout(() => {
+      setEndIndex((prev) => prev + 8);
+      if (endIndex > categoryCards.length) {
+        setbuttonState(false);
+      }
+    }, 1000);
+    setTimeout(() => {
+      setloadMore(false);
+    }, 1000);
+  };
 
   const handleClickLike = (item) => {
     if (localStorage.getItem("my-clothes")) {
@@ -494,7 +501,7 @@ function Market({ setItemsNo }) {
         ...JSON.parse(localStorage.getItem("my-clothes")),
         item,
       ];
-      setItemsNo(clothesArr.length)
+      setItemsNo(clothesArr.length);
       localStorage.setItem("my-clothes", JSON.stringify(clothesArr));
     } else {
       localStorage.setItem("my-clothes", JSON.stringify([item]));
@@ -506,7 +513,7 @@ function Market({ setItemsNo }) {
     let remArr = clothesArr.filter((cloth) => {
       return cloth.id !== item.id;
     });
-    setItemsNo(remArr.length)
+    setItemsNo(remArr.length);
     localStorage.setItem("my-clothes", JSON.stringify(remArr));
   };
 
@@ -526,7 +533,7 @@ function Market({ setItemsNo }) {
               </h1>
             </div>
 
-            <div className="max-w-[1430px] ml-[5px] mt-[36px] lg:mt-0 lg:ml-0 w-full ">
+            <div className="max-w-[1430px] mt-[36px] lg:mt-0 lg:ml-0 w-full ">
               <Swiper
                 modules={[Pagination, History]}
                 pagination={{ clickable: true }}
@@ -552,11 +559,7 @@ function Market({ setItemsNo }) {
                   return (
                     <SwiperSlide key={index}>
                       <div className="relative">
-                        <img
-                          src={s.img}
-                          alt="sImg"
-                          className=""
-                        />
+                        <img src={s.img} alt="sImg" className="" />
                         <div className="absolute hidden lg:flex bg-cbg max-w-[535px] left-[36px] bottom-[-10px] -z-10 w-full rounded-[70px] min-h-[84px] blur-[25px]"></div>
                       </div>
                     </SwiperSlide>
@@ -611,8 +614,8 @@ function Market({ setItemsNo }) {
               </div>
             </div>
 
-            <div className="flex items-center lg:items-start lg:border-b-[1px] mb-[24px] lg:mb-[45px] lg:border-[#E8E8E8] max-w-[1318px] w-full">
-              <div className="max-w-[141px] lg:max-w-[165px] bg-[#FFF] lg:bg-none rounded-[20px] lg:rounded-none pb-[15px] px-[15px] lg:px-0 lg:pt-0 pt-[15px] mr-[81px] lg:mr-[63px] lg:pl-[32px] lg:border-b-[1px] lg:mb-[-1px] lg:pb-[16px] lg:border-[#6151FF] cursor-pointer items-center flex gap-[9px] w-full">
+            <div className="flex max-w-fit gap-[20px] sm:gap-0 justify-between mx-auto items-center lg:items-start lg:border-b-[1px] mb-[24px] lg:mb-[45px] lg:border-[#E8E8E8] lg:max-w-[1318px] w-full">
+              <div className="max-w-[141px] lg:max-w-[165px] bg-[#FFF] lg:bg-none rounded-[20px] lg:rounded-none pb-[15px] px-[15px] lg:px-0 lg:pt-0 pt-[15px] lg:mr-[63px] lg:pl-[32px] lg:border-b-[1px] lg:mb-[-1px] lg:pb-[16px] lg:border-[#6151FF] cursor-pointer items-center flex gap-[9px] w-full">
                 <p className="text-[#000] md:text-[21px] lg:text-[16px]  text-[16px] font-semibold leading-[16px] tracking-[-0.32px]">
                   Women
                 </p>
@@ -620,7 +623,7 @@ function Market({ setItemsNo }) {
                   128
                 </p>
               </div>
-              <div className="flex gap-[81px] lg:gap-[80px]">
+              <div className="flex gap-[40px] sm:gap-[81px] lg:gap-[80px]">
                 {categoryText.map((text, index) => {
                   return (
                     <p
@@ -634,34 +637,50 @@ function Market({ setItemsNo }) {
               </div>
             </div>
 
-            <div className={`${button ? "pb-0" : "pb-[80px]"} grid mb-[171.2px] md:grid-cols-2 lg:max-w-[1320px] lg:mb-0 grid-cols-1c lg:grid-cols-4 gap-[30px]`}>
-              {categoryCards.slice(0, endIndex).map((c, index) => {
-                return (
-                  <Card
-                    key={index}
-                    handleClickRemove={() => handleClickRemove(c)}
-                    handleClickLike={() => handleClickLike(c)}
-                    cardInfo={cardInfo}
-                    img={c.img}
-                    title={c.title}
-                    price={c.price}
-                    type={c.type}
-                    logo={c.logo}
-                    className={c.className}
-                    titleClassName={c.titleClassName}
-                    typeClassName={c.typeClassName}
-                    priceClassName={c.priceClassName}
-                    logoClassName={c.logoClassName}
-                    className2={c.className2}
-                    classNamePb={c.classNamePb}
-                  />
-                );
-              })}
+            <div>
+              <div
+                className={`${
+                  button ? "pb-0" : "pb-[80px]"
+                } grid mb-[171.2px] md:grid-cols-2 max-w-fit mx-auto lg:max-w-[1320px] lg:mb-0 grid-cols-1c lg:grid-cols-4 gap-[30px]`}
+              >
+                {categoryCards.slice(0, endIndex).map((c, index) => {
+                  return (
+                    <Card
+                      key={index}
+                      handleClickRemove={() => handleClickRemove(c)}
+                      handleClickLike={() => handleClickLike(c)}
+                      cardInfo={cardInfo}
+                      img={c.img}
+                      title={c.title}
+                      price={c.price}
+                      type={c.type}
+                      logo={c.logo}
+                      className={c.className}
+                      titleClassName={c.titleClassName}
+                      typeClassName={c.typeClassName}
+                      priceClassName={c.priceClassName}
+                      logoClassName={c.logoClassName}
+                      className2={c.className2}
+                      classNamePb={c.classNamePb}
+                    />
+                  );
+                })}
+              </div>
+              <span
+                className={`loader h-[100%] mt-[70px] max-w-full flex inset-0 mx-auto ${
+                  loadMore ? "opacity-100" : "opacity-0 hidden"
+                } transition-all duration-500 ease-in-out`}
+              ></span>
             </div>
 
-            {button && <div onClick={loadmore} className="hidden lg:flex mx-auto max-w-[163px] w-full mt-[55px] mb-[107px]">
-              <Button />
-            </div>}
+            {button && (
+              <div
+                onClick={loadmore}
+                className="hidden lg:flex mx-auto max-w-[163px] w-full mt-[55px] mb-[107px]"
+              >
+                <Button />
+              </div>
+            )}
           </div>
         </div>
       )}
