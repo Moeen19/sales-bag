@@ -614,7 +614,7 @@ function Market({ setItemsNo }) {
               </div>
             </div>
 
-            <div className="flex max-w-fit gap-[20px] sm:gap-0 justify-between mx-auto items-center lg:items-start lg:border-b-[1px] mb-[24px] lg:mb-[45px] lg:border-[#E8E8E8] lg:max-w-[1318px] w-full">
+            <div className="flex max-w-fit gap-[20px] sm:gap-0 mx-auto items-center lg:items-start lg:border-b-[1px] mb-[24px] lg:mb-[45px] lg:border-[#E8E8E8] lg:max-w-[1318px] w-full">
               <div className="max-w-[141px] lg:max-w-[165px] bg-[#FFF] lg:bg-none rounded-[20px] lg:rounded-none pb-[15px] px-[15px] lg:px-0 lg:pt-0 pt-[15px] lg:mr-[63px] lg:pl-[32px] lg:border-b-[1px] lg:mb-[-1px] lg:pb-[16px] lg:border-[#6151FF] cursor-pointer items-center flex gap-[9px] w-full">
                 <p className="text-[#000] md:text-[21px] lg:text-[16px]  text-[16px] font-semibold leading-[16px] tracking-[-0.32px]">
                   Women
